@@ -35,7 +35,7 @@ let CoinbaseService = class CoinbaseService {
     }
     createCharge(chargeData) {
         return __awaiter(this, void 0, void 0, function* () {
-            return new Charge(chargeData);
+            return Charge.create(chargeData);
         });
     }
 };
