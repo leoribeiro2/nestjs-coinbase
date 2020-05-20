@@ -38,6 +38,11 @@ let CoinbaseService = class CoinbaseService {
             return Charge.create(chargeData);
         });
     }
+    retriveCharge(chargeId) {
+        return __awaiter(this, void 0, void 0, function* () {
+            return Charge.retrieve(chargeId);
+        });
+    }
 };
 CoinbaseService = __decorate([
     common_1.Injectable(),

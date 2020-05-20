@@ -4,4 +4,5 @@ export declare class CoinbaseService {
     private readonly options;
     constructor(options: CoinbaseModuleOptions);
     createCharge(chargeData: CreateCharge): Promise<resources.Charge>;
+    retriveCharge(chargeId: string): Promise<resources.Charge>;
 }
