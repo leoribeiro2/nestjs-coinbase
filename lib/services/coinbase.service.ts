@@ -19,4 +19,8 @@ export class CoinbaseService {
   public async createCharge(chargeData: CreateCharge) {
     return Charge.create(chargeData);
   }
+
+  public async retriveCharge(chargeId: string) {
+    return Charge.retrieve(chargeId);
+  }
 }
